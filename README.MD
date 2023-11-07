@@ -3,3 +3,8 @@
 ## Description
 
 This is a JS snake Game that was made with the help of Chat GTP
+
+## Installation
+
+No installation needed, just run it in the browser
+
