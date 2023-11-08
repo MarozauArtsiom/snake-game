@@ -12,6 +12,7 @@ const snake = {
     dy: 0,
     cells: [],
     maxCells: 4,
+    applesEaten: 0, // New property
 };
 
 function getRandomPosition() {
@@ -54,6 +55,7 @@ function update() {
     if (snake.x === apple.x && snake.y === apple.y) {
         snake.maxCells++;
         apple = getRandomPosition();
+        document.getElementById('score').innerText = `Apples eaten: ${snake.applesEaten}`;
     }
 
     // Check for collisions with the snake itself
